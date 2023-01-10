@@ -1,0 +1,21 @@
+.card {
+  @apply relative block rounded-lg overflow-hidden shadow-md transition-all hover:-translate-y-2 hover:shadow-xl;
+  aspect-ratio: 0.65;
+}
+
+.card__img {
+  @apply absolute inset-0 object-cover h-full;
+}
+
+.card__content {
+  @apply relative p-3 sm:p-4 flex flex-col justify-end text-white h-full bg-gray-900/40;
+}
+
+.card__description {
+  @apply text-sm;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
